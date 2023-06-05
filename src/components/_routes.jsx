@@ -12,7 +12,7 @@ import AcceleratorsPage from "../pages/Accelerators.jsx";
 
 const RoutesPage = () => {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/about" component={AboutPage} />
